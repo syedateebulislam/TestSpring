@@ -7,5 +7,7 @@ import java.util.Optional;
 
 
 public interface PersonsRepo extends JpaRepository<Persons , Integer> {
-//10.229.9.69
+
+    Persons findByPersonid(int i);
+
 }
